@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+#btn {
+  text-decoration: none;
+  padding: 40px 80px;
+  color: #fff;
+  border: 3px solid #fff;
+  font-size: 40px;
+  font-family: sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  transition: all 1s;
+}
+
+#btn:before {
+  content: "YEAH!";
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f44336;
+  transform: translateY(-100%);
+  transition: all 1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn:hover:before {
+  transform: translateY(0);
+}

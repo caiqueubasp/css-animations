@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#btn {
+  border: 2px solid #ff6347;
+  background: none;
+  color: #ff6347;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn:hover {
+  color: #fff;
+}
+
+#btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ff6347;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  height: 0%;
+  transition: all 0.5s;
+}
+
+#btn:hover:before {
+  height: 190%;
+}
