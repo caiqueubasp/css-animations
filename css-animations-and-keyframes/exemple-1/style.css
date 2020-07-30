@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#item-1 {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  animation-name: moving;
+  animation-duration: 3s;
+}
+
+#item-2 {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  animation-name: moving-2;
+  animation-duration: 3s;
+}
+
+#item-3 {
+  width: 80px;
+  height: 80px;
+  background-color: yellowgreen;
+  animation-name: moving-3;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+#item-4 {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  animation-name: moving-4;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+}
+
+#item-5 {
+  width: 80px;
+  height: 80px;
+  background-color: orangered;
+  animation-name: moving-5;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+/* Exemplo 1 */
+
+@keyframes moving {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes moving-2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translate(500px, 500px);
+  }
+}
+
+@keyframes moving-3 {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translate(500px, 500px);
+  }
+}
+
+@keyframes moving-4 {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translate(-500px, -500px);
+  }
+}
+
+@keyframes moving-5 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translate(-300px, -300px);
+  }
+}
