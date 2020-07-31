@@ -10,21 +10,24 @@ body {
   border: 5px solid #000;
   background: url(img/bg.jpg);
   background-position: bottom left;
-  animation: driving 15s linear infinite;
 }
 
 .car {
   position: absolute;
-  left: 300px;
-  bottom: 120px;
+  left: 20%;
+  top: 70%;
   width: 100px;
 }
 
 .motorbike {
   position: absolute;
-  left: 80px;
-  bottom: 100px;
+  left: 45%;
+  top: 60%;
   width: 100px;
+}
+
+.background:hover {
+  animation: driving 15s linear infinite;
 }
 
 @keyframes driving {
